@@ -29,7 +29,7 @@
 | prefecture_id      | integer    | null: false       |
 | shipping_day_id    | integer    | null: false       |
 | price              | integer    | null: false       |
-| user_id            | references | foreign_key: true |
+| user               | references | foreign_key: true |
 
 ## Association
 - belongs_to :user
@@ -40,8 +40,8 @@
 
 | Column           | Type       | Options           |
 | ---------------- | ---------- | ----------------- |
-| user_id          | references | foreign_key: true |
-| item_id          | references | foreign_key: true |
+| user             | references | foreign_key: true |
+| item             | references | foreign_key: true |
 
 ## Association
 - belongs_to :user
